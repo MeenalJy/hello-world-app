@@ -1,0 +1,28 @@
+name: Deploy Python App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Build Docker image
+      run: docker build -t python-hello-world .
+
+    - name: Deploy to Docker Hub
+      run: |
+        echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+        docker tag python-hello-world $DOCKER_USERNAME/python-hello-world
+        docker push $DOCKER_USERNAME/python-hello-world
