@@ -9,11 +9,10 @@ Welcome to my journey. I'm thrilled to share my experience of creating a deploym
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
 - [Workflow Overview](#workflow-overview)
 - [Workflow Configuration](#workflow-configuration)
 - [Conclusion](#conclusion)
-- [Resources](#resources)
+
 
 ## Introduction
 
