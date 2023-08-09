@@ -3,7 +3,7 @@
 [DevOps](https://your-image-url.com)
 
 Hey there! 👋 
-Welcome to my journey. I'm thrilled to share my experience of creating a deployment pipeline for a basic Python "Hello World" application using GitHub Actions.
+- Welcome to my journey. I'm thrilled to share my experience of creating a deployment pipeline for a basic Python "Hello World" application using GitHub Actions.
 
 ## Table of Contents
 
