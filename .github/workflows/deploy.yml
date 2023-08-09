@@ -22,11 +22,9 @@ jobs:
       run: docker build -t python-hello-world .
 
     - name: Deploy to Docker Hub
-      env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
       run: |
-        echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USERNAME" --password-stdin
-        docker tag python-hello-world "$DOCKER_USERNAME/python-hello-world"
-        docker push "$DOCKER_USERNAME/python-hello-world"
+        echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+        docker tag python-hello-world $DOCKER_USERNAME/python-hello-world
+        docker push $DOCKER_USERNAME/python-hello-world
+
 
