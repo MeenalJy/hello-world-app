@@ -34,14 +34,8 @@ To get started with building the deployment pipeline, follow these steps:
 
 2. **Clone the Repository**: Clone the forked repository to your local machine using the following command:
 
-   ```bash
-   git clone https://github.com/your-username/your-forked-repo.git
    ```
-
-3. **Navigate to the Repository**: Move into the repository directory:
-
-   ```bash
-   cd your-forked-repo
+   git clone https://github.com/MeenalJy/hello-world-app.git
    ```
 
 ## Workflow Overview
@@ -51,7 +45,7 @@ The deployment pipeline we'll build consists of the following steps:
 1. **Linting**: Check the Python code for any syntax or style issues.
 2. **Testing**: Run unit tests to ensure the code functions as expected.
 3. **Building**: Package the application, if needed.
-4. **Deployment**: Deploy the application to a target environment (for this example, we'll keep it simple and deploy to a local directory).
+4. **Deployment**: Deploy the application to a target environment (for this example, we'll keep it simple and deploy it to a local directory).
 
 ## Workflow Configuration
 
